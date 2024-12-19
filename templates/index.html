@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<section class="hero">
+  <h1>Welcome to My Portfolio</h1>
+  <p>
+    Hello! I’m <strong>Love Jayesh Ahir</strong>, a Software Engineer passionate
+    about designing and building innovative solutions that make a real-world
+    impact. I specialize in full-stack development, cloud computing, and
+    AI-powered tools.
+  </p>
+  <p>
+    Explore my portfolio to learn more about my academic journey, professional
+    experiences, and the exciting projects I’ve worked on that showcase my
+    skills and dedication to excellence.
+  </p>
+</section>
+
+<section class="carousel">
+  <img
+    src="{{ url_for('static', filename='images/profile.jpg') }}"
+    alt="Profile Image"
+  />
+  <img
+    src="{{ url_for('static', filename='images/axisray.jpg') }}"
+    alt="Axisray Office"
+  />
+  <img
+    src="{{ url_for('static', filename='images/moontech.jpg') }}"
+    alt="Moon Technolabs Office"
+  />
+  <div class="carousel-controls">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+</section>
+{% endblock %}

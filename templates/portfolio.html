@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block title %}Portfolio{% endblock %} {% block
+content %}
+<section class="portfolio">
+  <h2>My Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <img
+        src="https://via.placeholder.com/300x200"
+        alt="University Management System"
+      />
+      <div class="card-content">
+        <h3>University Management System</h3>
+        <p>
+          A comprehensive platform to manage student records, attendance, and
+          performance efficiently. Built with Java, Spring Boot, and MySQL.
+        </p>
+        <a href="{{ url_for('main.project_detail', project='project1') }}"
+          >Learn More</a
+        >
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://via.placeholder.com/300x200"
+        alt="Amazon Sentiment Analysis"
+      />
+      <div class="card-content">
+        <h3>Amazon Sentiment Analysis</h3>
+        <p>
+          An AI-powered solution to analyze product reviews using AWS Lambda,
+          DynamoDB, and AWS Comprehend.
+        </p>
+        <a href="{{ url_for('main.project_detail', project='project2') }}"
+          >Learn More</a
+        >
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://via.placeholder.com/300x200"
+        alt="Nutritional Information Manager"
+      />
+      <div class="card-content">
+        <h3>Nutritional Information Manager</h3>
+        <p>
+          A web app to track nutrition and create meal plans, leveraging Flask,
+          PostgreSQL, and JavaScript.
+        </p>
+        <a href="{{ url_for('main.project_detail', project='project3') }}"
+          >Learn More</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
